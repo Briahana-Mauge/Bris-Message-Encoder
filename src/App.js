@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import logo from './logo.svg';
 import './App.css';
 
 
@@ -97,10 +96,10 @@ function App() {
     <div className="App">
       <form onSubmit={handleSubmit}>
         <div>
-          <label>Username:</label>
-          <textarea onChange={handleInputChange} value={input} cols="50" placeholder='area' />
+          <label>Message:</label>
+          <textarea onChange={handleInputChange} value={input} cols="50" placeholder='Enter message here...' />
         </div>
-        <input type="submit" />
+        <input type="submit" value='Encrypt'/>
       </form>
       {submitted
         ? <h2>{encryption}</h2>
